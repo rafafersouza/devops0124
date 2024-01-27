@@ -1,2 +1,0 @@
-Nova alteração
-Alteração teste para utilização do domando git stash
