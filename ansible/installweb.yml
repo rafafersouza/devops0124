@@ -65,25 +65,25 @@
         #state: present
         #name: php7.4
         #notify: Reload Apache    
-    - name: 'Habilitar Modulo Virtual Host' 
-      apache2_module:
-        state: present
-        name: vhost_alias
-        notify: Reload Apache 
+        #- name: 'Habilitar Modulo Virtual Host' 
+        #apache2_module:
+        #state: present
+        #name: vhost_alias
+        #notify: Reload Apache 
 
-  handlers:
-   - name: Reload Apache
-     service:
-      name: apache2
-      state: reloaded
-   - name: Restart Apache
-     service:
-       name: apache2
-       state: restarted
-   - name: Start Apache
-     service:
-       name: apache2
-       state: started 
+        #handlers:
+        #- name: Reload Apache
+        #service:
+        #name: apache2
+        #state: reloaded
+        #- name: Restart Apache
+        #service:
+        #name: apache2
+        #state: restarted
+        # - name: Start Apache
+        #service:
+        #name: apache2
+        #state: started 
 
 
 
