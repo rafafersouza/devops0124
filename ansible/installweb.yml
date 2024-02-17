@@ -60,7 +60,7 @@
     - name: 'Habilitar Arquivode configuração express'
       shell: /usr/sbin/a2enconf direxpress.conf
       notify: Reload Apache
-        # - name: 'Habilitar Modulo php7.4'
+        #- name: 'Habilitar Modulo php7.4'
         #apache2_module:
         #state: present
         #name: php7.4
