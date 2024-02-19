@@ -48,6 +48,6 @@ pipeline {
                 input 'Deseja prosseguir com o Deploy e Push?'
             }
         }
-/133122Rf@#!tigerroberto*
+/*
  }
 }
