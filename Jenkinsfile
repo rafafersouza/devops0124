@@ -33,7 +33,7 @@ pipeline {
             steps {
                 // Testes automatizados da aplicação
 		sh 'docker compose rm -f $(docker ps -a -q)'
-                sh 'docker compose -f docker compose.yml up -d'
+                sh 'docker compose -f docker-compose.yml up -d'
 
                 //   Realize os testes nos serviços em execução
                 // Exemplo de teste usando curl para verificar se o serviço web está respondendo
